@@ -31,9 +31,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/css/fontawesome/css/all.css",
+              "src/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
