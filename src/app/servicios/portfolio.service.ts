@@ -12,4 +12,6 @@ export class PortfolioService {
     return this.http.get('../assets/data/data.json');
   }
 
+  
+
 }

@@ -1,0 +1,258 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+.grid-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nBarStyle, .navbar-brand, .nav-link {
+  margin: 0 10px;
+  padding: 0;
+}
+
+.nBarStyle, .navbar-brand {
+  width: 100%;
+  margin: 0px auto;
+  border-radius: 32px;
+  text-align: left;
+}
+
+#full-name {
+  margin-left: 20px;
+}
+
+.btnLog .btn {
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  border-color: green;
+  color: green;
+  margin-right: 0.15in;
+}
+
+.mat-card {
+  border-radius: 32px;
+  margin: 1px auto;
+  padding: 20px;
+  border-color: lightgray;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mat-card#first-card {
+  padding: 0;
+}
+
+div#profile-background {
+  width: 100%;
+  height: auto;
+  display: flex;
+  z-index: 1;
+}
+
+div#profile-background img {
+  width: 100%;
+  border-radius: 32px 32px 0 0;
+  position: relative;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  margin-top: -110px;
+  z-index: 1;
+  border: 1px solid white;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+#info-actions {
+  display: flex;
+  margin: -20px 0 15px 15px;
+}
+
+#info-data {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 84% 5% 1% 10%;
+  grid-template-rows: repeat(3, auto);
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+
+#info-main-skill {
+  margin-top: 15px;
+  font-style: italic;
+  font-weight: bold;
+  grid-column: 1/span 1;
+  grid-row: 2/span 1;
+}
+
+#info-contact {
+  font-style: italic;
+  grid-column: 1/span 1;
+  grid-row: 3/span 1;
+}
+
+#info-contact a {
+  font-style: normal;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.btn-edit {
+  float: right;
+}
+
+#info-details img {
+  width: 50px;
+  float: right;
+}
+
+#conicet {
+  margin-top: 10px;
+  grid-column: 4/span 2;
+  grid-row: 2/span 2;
+}
+
+#ap {
+  grid-column: 4/span 1;
+  grid-row: 3/span 1;
+}
+
+#imgcon {
+  width: 50px;
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+  justify-content: end;
+}
+
+#imgap {
+  width: 50px;
+  grid-column: 2/span 1;
+  grid-row: 3/span 1;
+}
+
+#ap a, #conicet a {
+  color: black;
+  text-align: right;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 800px) {
+  div#profile-background {
+    width: 100%;
+    height: auto;
+    display: flex;
+    z-index: 1;
+  }
+
+  .profile-image {
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    margin-top: -50px;
+    z-index: 1;
+    border: 1px solid white;
+    position: relative;
+  }
+
+  #info-data {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    height: 190px;
+  }
+
+  h1 {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+  }
+
+  #info-main-skill {
+    font-style: italic;
+    font-weight: bold;
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+  }
+
+  #info-contact {
+    font-style: italic;
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+  }
+
+  #conicet {
+    margin-top: 10px;
+    grid-column: 1/span 2;
+    grid-row: 4/span 2;
+    margin-left: 60px;
+  }
+
+  #ap {
+    grid-column: 1/span 1;
+    grid-row: 5/span 1;
+    margin-left: 60px;
+  }
+
+  #imgcon {
+    width: 50px;
+    grid-column: 1/span 1;
+    grid-row: 4/span 1;
+  }
+
+  #imgap {
+    width: 50px;
+    grid-column: 1/span 1;
+    grid-row: 5/span 1;
+  }
+
+  #info-actions {
+    display: flex;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  div#profile-background {
+    width: 100%;
+    height: auto;
+    display: flex;
+    z-index: 1;
+  }
+
+  .profile-image {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: -50px;
+    z-index: 1;
+    border: 1px solid white;
+    position: relative;
+  }
+
+  #info-actions {
+    display: flex;
+    margin-top: 50px;
+  }
+}/*# sourceMappingURL=styles.css.map */

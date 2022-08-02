@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
   selector: 'app-edu-exp',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EduExpComponent implements OnInit {
 
-  constructor() { }
+  miExperiencia:any; 
+  miEducacion:any;
+
+  constructor(private datosPortfolio:PortfolioService) { }
 
   ngOnInit(): void {
+    this.datosPortfolio.obtenerDatos().subscribe(data => {
+      this.miExperiencia=data.experience;
+    });
+
+    this.datosPortfolio.obtenerDatos().subscribe(data => {
+      this.miEducacion=data.education;
+    });
   }
 
 }

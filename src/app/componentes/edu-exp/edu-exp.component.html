@@ -1,24 +1,65 @@
-<div class="card mat-card">
-    <div class="card-titles">
-    <h2>Experiencia</h2>
-    <div class="btn-edit" onclick="edit_experiencia()">
-      <a href="#" class="btn-right">
-        <i class="fa fa-pen"></i>
-     </a>
- </div>
-    <p id="text-experiencia">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas voluptatem itaque odit suscipit quo nulla quisquam ea expedita fugiat. Tempora veniam animi, explicabo nisi, quaerat cumque id tempore repellendus est laborum, repellat quo esse tenetur eligendi adipisci cum accusamus ducimus!</p>
-    <div>
-      <input id="edit-experiencia" type="text" oninput="editTextExperiencia(this.value)" style="display:none">
+ <div class="card mat-card">
+    <div id="experience">
+      <div class="card-titles">
+        <h2>Experiencia</h2>
+        <div class="btn-edit">
+          <i class="fa fa-plus btn-right"></i>
+        </div>
+      </div>      
+      <div>
+        <ul class="items-list">          
+          <li *ngFor="let experience of miExperiencia">
+            <div class="data-container">              
+                <div class="logo-image-container">
+                  <img class="logo-image" [src]="experience.img" alt="TP"/>
+                </div>
+                <div class="list-info">
+                  <div class="data-control">
+                    <div class="btn-edit">
+                      <i class="fa fa-pen btn-right"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h3>{{experience.position}}</h3>
+                    <p>{{experience.company}} - <span>{{experience.mode}}</span></p>
+                    <h4>{{experience.start}} - {{experience.end}} - {{experience.timeElapsed}}</h4>
+                    <h4>{{experience.ubication}}</h4>
+                  </div>
+                </div>
+            </div>            
+          </li>
+        </ul>
+      </div>
     </div>
-    <h2>Educaci&oacute;n</h2>
-    <div class="btn-edit" onclick="edit_educacion()">
-      <a href="#" class="btn-right">
-        <i class="fa fa-pen"></i>
-     </a>
- </div>
-    <p id="text-educacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consequuntur optio atque fuga assumenda corporis nobis expedita corrupti qui deleniti recusandae quibusdam, suscipit architecto deserunt commodi officia dolor in ut.</p>
-  </div>
-  <div>
-    <input id="edit-educacion" type="text" oninput="editTextEducacion(this.value)" style="display:none">
-  </div>
+    <div id="educacion">
+      <div class="card-titles">
+        <h2>Educación</h2>
+        <div class="btn-edit">
+          <i class="fa fa-plus btn-right"></i>
+        </div>
+      </div>
+      <div>
+        <ul class="items-list">
+          <li *ngFor="let education of miEducacion">
+            <div class="data-container">
+                <div class="logo-image-container">
+                  <img class="logo-image" [src]="education.img" alt="AP"/>
+                </div>
+                <div class="list-info">
+                  <div class="data-control">
+                    <div class="btn-edit">
+                      <i class="fa fa-pen btn-right"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h3>{{education.school}}</h3>
+                    <p>{{education.title}}, {{education.career}}, {{education.score}}</p>
+                    <p><time>{{education.start}}</time> - <time>{{education.end}}</time></p>
+                  </div>
+                </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>

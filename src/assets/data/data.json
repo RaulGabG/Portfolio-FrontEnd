@@ -17,32 +17,32 @@
     "about" : "Escritor y Desarrollador Web",
     "experience" : [{
         "position" : "Supervisor",
-        "company" : "Teleperformance",
-        "img" : "",
-        "mode" : "",
-        "start" : "",
-        "end" : "",
-        "timeElapsed" : ""
+        "company" : "Teleperformance Argentina",
+        "img" : "../assets/images/tp.png",
+        "mode" : "Full-Time",
+        "start" : "oct 2009",
+        "end" : "mar 2018",
+        "timeElapsed" : "8 años y 5 meses",
+        "ubication" : "Tucumán, Argentina"
     }],
     "education" : [{
-        "school" : "",
-        "title" : "",
-        "img" : "",
-        "career" : "",
+        "school" : "Argentina Programa",
+        "title" : "Full Stack Web Developer",
+        "img" : "../assets/images/Ap.png",
+        "career" : "Programación",
         "score" : 0,
-        "start" : "",
-        "end" : ""
-    },
-    {
-        "school" : "",
-        "title" : "",
-        "img" : "",
-        "career" : "",
+        "start" : "2021",
+        "end" : "2022"
+        },
+        {
+        "school" : "Colegio Nacional Bartolomé Mitre",
+        "title" : "Perito Especializado en Recursos Naturales",
+        "img" : "../assets/images/colbmitre.png",
+        "career" : "Humanidades",
         "score" : 0,
-        "start" : "",
-        "end" : ""
-    }
-    ],
+        "start" : "2005",
+        "end" : "2006"
+    }],
     "aptitudes" : [{
         "name" : "HTML",
         "progress" : 75,
@@ -69,11 +69,9 @@
     }
     ],
     "proyectos" : [{
-        "name" : ""
+        "name" : "Portfolio"
     },
     {
-        "name" : ""
-    }    
-   ]
-  
+        "name" : "Portfolio2"
+    }]  
 }
